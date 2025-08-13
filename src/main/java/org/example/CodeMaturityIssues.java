@@ -23,10 +23,16 @@ public class CodeMaturityIssues {
         Thread.dumpStack();
     }
 
+    /**
+     * Returns an Optional containing 42 if the flag is true, otherwise returns an empty Optional.
+     */
     Optional<Integer> nullMisuse(boolean flag) {
         return flag ? Optional.of(42) : Optional.empty();
     }
 
+    /**
+     * Creates a Date object representing March 29, 2024.
+     */
     public void obsoleteDateTimeApi(){
         Date date = new Date(2024, Calendar.MARCH, 29);
     }
