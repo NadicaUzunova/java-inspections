@@ -12,7 +12,7 @@ public class NullSafetyIssues {
         @NotNull
         abstract String method();
     }
-    class B extends A {
+    static class B extends A {
         @NotNull String method() { return "empty string"; }
     }
 
