@@ -33,6 +33,9 @@ public class NullSafetyIssues {
         return null;
     }
 
+    /**
+     * Fetches and prints a value using an optional without checking if it is present.
+     */
     void redundantChecks(){
         var optional = fetchX();
         String value = optional.get(); //calling get without isPresent check
