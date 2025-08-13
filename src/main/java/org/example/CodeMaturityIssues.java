@@ -34,14 +34,8 @@ public class CodeMaturityIssues {
 
 }
 
-class Person {
-    private final String name; // can be final
-
-    Person(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
+/**
+ * @param name can be final
+ */
+record Person(String name) {
 }
