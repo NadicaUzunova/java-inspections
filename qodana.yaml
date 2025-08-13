@@ -20,6 +20,15 @@ include:
 
 projectJDK: 17 #(Applied in CI/CD pipeline)
 
+failureConditions:
+  severityThresholds:
+    any: 3 # Total problems
+    critical: 1 # Critical and other severities
+    high: 1
+    moderate: 1
+    low: 3
+    info: 5
+
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
 
