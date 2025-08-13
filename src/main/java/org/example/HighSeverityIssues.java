@@ -4,6 +4,9 @@ public class HighSeverityIssues {
 
     private ProblemsFactory factory;
 
+    /**
+     * Calls a deprecated method from the factory.
+     */
     public void usingDeprecatedApi() {
         factory.method3();
     }
